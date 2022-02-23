@@ -1,0 +1,62 @@
+/* .navbar{
+    background-color: rgb(247, 195, 175);
+}
+.r-services{
+    background-color: rgb(242, 215, 190);
+} */
+
+.item > img {
+    height: 400px !important;
+    width:100%
+}
+
+h2{
+    text-align: center;      
+}
+p{
+    font-size: 18px;
+    text-align: center;  
+}
+h6{
+    text-align: center;
+}
+.col-md-3{
+    border:1px solid black;
+    height:200px;
+    margin:29px;
+    width:20%;
+}
+
+.col-md-3 > img{
+    width: 115%;
+    height: 161px;
+    margin-left: -15px;
+}
+#sal-slider1{
+    height:220px;
+    background-color: black;
+    color:white;
+    border-radius:10px;
+}
+.s-item{
+    margin-top: 80px;
+}
+.b-info > img{
+    height: 290px;
+    float: right;
+    margin-right:135px;
+}
+.b-info > p{
+    text-align: left;
+    margin-left:104px;
+    width: 55%;
+}
+.footer{
+    height:250px;
+    margin-top:-30px;
+    background-color:black;
+    color: white;
+}
+/* .r-title > h6{
+    text-align: center;
+} */

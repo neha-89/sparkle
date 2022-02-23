@@ -1,0 +1,5 @@
+background-color: rgb(247, 195, 175); 
+    background-color: rgb(242, 215, 190);
+    background-color: rgb(247, 195, 175);
+    background-color: rgb(240, 227, 220);
+doc link:https://docs.google.com/document/d/1Drcyoo5fYszMDFFhNofYmk7xD3qIClAA/edit?usp=sharing&ouid=101705558906070153872&rtpof=true&sd=true
