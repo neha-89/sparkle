@@ -1,153 +1,252 @@
 <html>
     <head>
         <title>Sparkel Beauty Zone</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="index.css"/>
+        <script src="./index.js"></script>
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-inverse navbar-fixed-top">
+            <!-- <nav class="navbar navbar-expand-lg fixed-top"> -->
+              <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle"
-                        data-toggle="collapse" data-target="#sal-Nav">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">
-                            Sparkle Beauty Zone
-                        </a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="sal-Nav">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Book Appointment</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> SignUp</a></li>
-                            
-                        </ul>
-                    </div>
+                  <a class="navbar-brand" href="#">Sparkle Beauty Zone</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Offers</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <ul class="d-flex">
+                      <!-- <li>Book an appointment</li> -->
+                    <li><a href="#"><i class="bi bi-box-arrow-in-right"></i> Login</a></li>
+                    <li><a href="#"><i class="bi bi-person-plus"></i> SignUp</a></li>
+                    <li><a onclick="darkmode()" id="Knop"> 
+                       <span class="sun-icon">
+                          <i class="bi bi-sun-fill" id="zon" style="color:#ffde08;"></i>
+                       </span>
+                        <span class="moon-icon">
+                          <i class="bi bi-moon-fill" id="maan" style="color:#0c3cfa;"></i>
+                       </span>
+                      </a></li>
+                    <!-- <li><button class="btn btn-outline-light btn-rounded mode" onclick="changeMode()">SwitchMode</button></li> -->
+                  </ul>
+                 </div>
+                </nav>
+              <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-            </nav>
-            <div id="sal-slider" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#sal-slider" data-slide-to="0" class="active"></li>
-                    <li data-target="#sal-slider" data-slide-to="1"></li>
-                    <li data-target="#sal-slider" data-slide-to="2"></li>
-                </ol>
                 <div class="carousel-inner">
-                    <div class="item active" >
-                        <img src="https://i.ibb.co/hZj5173/engin-akyurt-g-m8-EDc4-X6-Q-unsplash.jpg" alt="slider-1">
-                        <!-- <div class="carousel-caption">
-                            <h2>Food</h2>
-                        </div> -->
-                    </div>
-                    <div class="item">
-                        <img src="https://i.ibb.co/zJg8kTH/teahub-io-fashion-wallpaper-hd-736214.jpg" alt="slider-2">
-                    </div>
-                    <div class="item">
-                        <img src="https://i.ibb.co/xhNykKN/Wallpaperkiss-1212798.jpg" alt="slider-3">
-                    </div>
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://i.ibb.co/hZj5173/engin-akyurt-g-m8-EDc4-X6-Q-unsplash.jpg" class="item" alt="...">
+                  </div>
+                  <div class="carousel-item"  data-bs-interval="2000">
+                    <img src="https://i.ibb.co/zJg8kTH/teahub-io-fashion-wallpaper-hd-736214.jpg" class="item" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://i.ibb.co/xhNykKN/Wallpaperkiss-1212798.jpg" class="item" alt="...">
+                  </div>
                 </div>
-
-                <a class="left carousel-control" href="#sal-slider" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#sal-slider" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </header>
-        <div class="r-services">
-          <div class="container">
+        
+        <div class="container">
             <h2>Recommended Services</h2>
             <p>Our runway experts have curated some of the most popular services at Lakmé Salon,
             just for you. Take your pick and head to your nearest salon and get started on your makeover!</p>
-            <div class="row">
+          <div class="row">
                 <div class="col-md-3">
-                    <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img">
-                    <span class="r-title"><h6>Candy Crush pedicure & menicure</h6></span>
+                  <div class="card" >
+                    <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img"class="card-img-top r-serv"/>
+                    <div class="card-body r-servtext  shadow p-3 mb-5 ">
+                      <p class="card-text">pedicure & menicure</p>
+                    </div>
+                  </div>
+                </div> 
+                <div class="col-md-3">
+                  <div class="card " >
+                    <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img"class="card-img-top r-serv"/>
+                    <div class="card-body r-servtext shadow p-3 mb-5">
+                      <p class="card-text">Hair Spa</p>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-md-3">
-                    <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img">
-                    <span class="r-title"><h6>Hair Spa</h6></span>
+                  <div class="card " >
+                    <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img" class="card-img-top r-serv"/>
+                    <div class="card-body r-servtext  shadow p-3 mb-5">
+                      <p class="card-text">Fruit Facial</p>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-md-3">
-                    <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img">
-                    <span class="r-title"><h6>Fruit Facial</h6></span>
-                </div>
-                <div class="col-md-3">
-                    <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img">
-                    <span class="r-title"><h6>Daily Glam Makeup</h6></span>
+                  <div class="card" >
+                    <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img" class="card-img-top r-serv" />
+                    <div class="card-body r-servtext  shadow p-3 mb-5">
+                      <p class="card-text">Daily Glam Makeup</p>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
+       <div class="container-fluid testimonial">
         <h2>Testimonials</h2>
-        <div id="sal-slider1" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                    <li data-target="#sal-slider1" data-slide-to="0" class="active"></li>
-                    <li data-target="#sal-slider1" data-slide-to="1"></li>
-                    <li data-target="#sal-slider1" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="item active s-item" >
-                        <p>"mdhgjfghdffghfjg"</p>
-                        <h6>-ghgjhkjhk</h6>
-                        <!-- <div class="carousel-caption">
-                            <h2>Food</h2>
-                        </div> -->
-                 </div>
-                <div class="item s-item"">
-                        <p>"mdhgjfghdffghfjg"</p>
-                        <h6>-ghgjhkjhk</h6>
-                </div>
-                <div class="item s-item"">
-                        <p>"mdhgjfghdffghfjg"</p>
-                        <h6>-ghgjhkjhk</h6>
-                 </div>
-                <a class="left carousel-control" href="#sal-slider" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#sal-slider" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner sal-slider1">
+            <div class="carousel-item active s-item">
+              <p>"mdhgjfghdffghfjg"</p>
+              <h6>-ghgjhkjhk</h6>
             </div>
+            <div class="carousel-item s-item">
+              <p>"mdhgjfghdffghfjg"</p>
+              <h6>-ghgjhkjhk</h6>
+            </div>
+            <div class="carousel-item s-item">
+              <p>"mdhgjfghdffghfjg"</p>
+              <h6>-ghgjhkjhk</h6>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-    </div>
-    <div class="jumbotron b-info">
-        <img src="https://i.ibb.co/86nHqyh/bridal.jpg" alt="bridal">
-        <h2>The Bridal Look</h2>
-        <p>The Uff Teri Ada look from our Blockbuster Brides collection is designed for the coy bride whose excitement at her sangeet is palpable but measured. She is a vision of pure radiance as she prepares to embark on this new journey in her life. 
+       </div>
+       <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://i.ibb.co/86nHqyh/bridal.jpg" alt="bridal" class="bridal">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body title">
+              <h2 class="card-title ">The Bridal Look</h2>
+              <p class="card-text b-text">
+                The Uff Teri Ada look from our Blockbuster Brides collection is designed for the coy bride whose excitement at her sangeet is palpable but measured. She is a vision of pure radiance as she prepares to embark on this new journey in her life. 
 
             The shades of mint green that this stunning bride adorns befits her strong sense of individuality and independence.
             
-            Check out our complete Blockbuster Bridal Collection. </p>
-    </div>
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                    About Us
-                </div>
-                <div class="col-md-3">
-                    Contact Us
-                </div>
-                <div class="col-md-3">
-                    Careers
-                </div>
+            Check out our complete Blockbuster Bridal Collection.
+              </p>
+             
             </div>
-        </div> 
-    </footer>
+          </div>
+        </div>
+      </div>
+      <section class="">
+        <!-- Footer -->
+        <footer class="footer text-white">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">About Us</h5>
+      
+                <p class="f-para">  
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                  molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                  aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                </p>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase f-title">Find Us</h5>
+      
+                <div class="container p-4 pb-0">
+                  <!-- Section: Social media -->
+                  <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                      ><i class="bi bi-facebook"></i
+                    ></a>
+                    <!-- whatsapp -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                      ><i class="bi bi-whatsapp"></i
+                    ></a>
+              
+                  
+              
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                      ><i class="bi bi-instagram"></i
+                    ></a>
+              
+                 
+                  </section>
+                  <!-- Section: Social media -->
+                </div>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              
+      
+                <ul class="list-unstyled text-decoration-none">
+                  <li>
+                    <a href="#!" class="text-white text-decoration-none"> <h5 class="text-uppercase mb-0">Careers</h5></a>
+                  </li>
+                  <!-- <li>
+                    <a href="#!" class="text-white">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white">Link 3</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white">Link 4</a>
+                  </li> -->
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="#">Sparkle.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </section>
+      
     </body>
 </html>
+   
+   
