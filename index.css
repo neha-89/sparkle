@@ -30,6 +30,40 @@
     background-color: white;
     color:black;
   }
+  /* #coupon{
+    height:200px;
+    width:400px;
+    background-color:gray;
+    background-image: url("https://i.ibb.co/Z6QH2mq/salcoupon.png");
+    z-index:100;
+    margin:auto;
+    visibility: hidden;
+    position: absolute;
+} */
+
+#coupon{
+    position: absolute;
+    z-index: 100;
+    background-image: url("https://i.ibb.co/Z6QH2mq/salcoupon.png");
+    visibility: hidden;
+    margin-top: 109px;
+    margin-left: 465px;
+}
+.couponbtn{
+    position: absolute;
+    background-color: black;
+    color: white;
+    width:35px;
+    height:35px;
+    border-radius: 50px;
+    margin-left: -15px;
+    margin-top: -11px;
+ }
+ .couponimg{
+    width:388;
+    height:292px;
+    border-radius:50px solid white;
+}
 
   .dark-mode{
     background-color: black;

@@ -8,7 +8,15 @@
         <script src="./index.js"></script>
     </head>
     <body>
+     
         <header>
+          <div>
+            <div id="coupon">
+                <button onClick="closeCoupon()" class="couponbtn">&times;</button>
+                <img src="https://i.ibb.co/VDFf6C6/salcoupon.png" alt="coupon"  class="couponimg">
+               
+            </div>
+        </div>
             <!-- <nav class="navbar navbar-expand-lg fixed-top"> -->
               <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
@@ -247,6 +255,9 @@
       </section>
       
     </body>
+    <script>
+      window.onload=loadCoupon()
+  </script>
 </html>
    
    
