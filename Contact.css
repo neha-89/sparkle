@@ -1,0 +1,172 @@
+/* .navbar{
+    background-color: rgb(247, 195, 175);
+}
+.r-services{
+    background-color: rgb(242, 215, 190);
+} */
+/* body{
+    background-color: white;
+    color:black;
+}
+.dark{
+    background-color: black !important;
+    color:white;
+} */
+/* .dark-mode button {
+    background: black;
+    color: white;
+  } */
+  
+  .dark-mode .sun-icon,
+  .moon-icon {
+    display: none;
+  }
+  
+  .dark-mode .moon-icon {
+    display: inline;
+  }
+
+  body{
+    background-color: white;
+    color:black;
+  }
+
+
+#coupon{
+    position: absolute;
+    z-index: 100;
+    background-image: url("https://i.ibb.co/Z6QH2mq/salcoupon.png");
+    visibility: hidden;
+    margin-top: 109px;
+    margin-left: 465px;
+}
+.couponbtn{
+    position: absolute;
+    background-color: black;
+    color: white;
+    width:35px;
+    height:35px;
+    border-radius: 50px;
+    margin-left: -15px;
+    margin-top: -11px;
+ }
+ .couponimg{
+    width:388;
+    height:292px;
+    border-radius:50px solid white;
+}
+
+  .dark-mode{
+    background-color: black;
+    color:white;
+  }
+  ul li a {
+    list-style: none;
+    padding-right: 14px;
+    color:white;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+  .navbar{
+      background-color: #f68b9e;
+      
+  }
+  .navbar-brand{
+      color:white;
+  }
+  .nav-link{
+      color:white;
+  }
+.item  {
+    height: 500px !important;
+    width:100%
+}
+
+h2{
+    text-align: center;
+    margin-top: 30px; 
+    text-decoration: underline 11px solid pink;     
+}
+p{
+    font-size: 18px;
+    text-align: center; 
+    margin-top: 42px; 
+}
+h6{
+    text-align: center;
+}
+
+.mode{
+    margin-left: -144px;
+    position: absolute;
+    margin-top: 36px;
+}
+.testimonial{
+    margin-top: 20%;
+}
+.card{
+    background-color: #fff0;
+    border:0px;
+}
+.r-serv{
+    position:absolute;
+    border:2px solid pink;
+}
+
+.r-servtext{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    margin-top: 117px;
+    background-color: rgb(242, 215, 190,0.77);
+    /* background-color:#efb7ef8c; */
+}
+.sal-slider1{
+    height:220px;
+    background-color:#e1af81;
+    color:white;
+    margin-top: 43px;
+}
+.bridal{
+    padding:14%;
+    border-radius: 25%;
+}
+.title{
+    margin-top: 17%;
+    margin-left:29%;
+    
+}
+.f-para{
+    text-align: left;
+    margin-top: 5px;
+}
+.f-title{
+   margin-left:53px;
+}
+.b-text{
+    text-align: justify;
+    padding-right: 17px;
+    margin-top: 42px;
+}
+.footer{
+    background-color:rgb(227, 187, 150) ;
+}
+.s-item{
+    margin-top: 43px;
+}
+/* .b-info > img{
+    height: 290px;
+    float: right;
+    margin-right:135px;
+} */
+/* .b-info > p{
+    text-align: left;
+    margin-left:104px;
+    width: 55%;
+} */
+
+/* .r-title > h6{
+    text-align: center;
+} */
