@@ -60,6 +60,19 @@
     background-color: black;
     color:white;
   }
+  #contact{
+    margin-top:47px;
+    width:475px;
+    float:left;
+  }
+  #send{
+    margin-top: 15px;
+  }
+  #map{
+    margin-left: 40px;
+    margin-top: 55px;
+
+  }
   ul li a {
     list-style: none;
     padding-right: 14px;
