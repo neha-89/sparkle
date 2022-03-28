@@ -293,7 +293,7 @@ hair services = [
     }
      {
         "id" : "5",
-        "service_5" : "hair wash",
+        "service_6" : "hair wash",
         "category-1": "normal hair wash",
         "img" : " ",
         "category-2" :"keratin hair wash",
@@ -301,3 +301,14 @@ hair services = [
     }
 
 ]
+
+
+tattoo services = [{
+    "id" : "1"
+    "service-1" : "Black&white Tattoo",
+    "img" : "",
+    "service-2" : "Colour Tattoo",
+    "img" : "",
+    "service-3" : "3D Tattoo",
+    "img" : "",
+}]
