@@ -46,6 +46,7 @@ beauty services = [
     {
         "id" : "1",
         "service_1" : "Facial",
+        "img" : " ",
         "category_1" : "Normal Facial":[
             {
                 "category_id" : "1",
@@ -69,7 +70,7 @@ beauty services = [
                 
             },
         ],
-        "category_2" :  "Designer Facial"::[
+        "category_2" :  "Designer Facial":[
             {
                 "category_id" : "2",
                 "type-1" : [{
@@ -88,29 +89,90 @@ beauty services = [
                     "details" : "It is for mature skin. This beauty booster facial re-introduces your facial skin into youthful freshness & glow with the goodness of Vitamin C, it revitalizes the ageing skin.",
                 }],
                  
+             },
+        ],
+
+    {
+        "id" : "2",
+        "service_2" : "Clean Ups/Peek Mask",
+        "img" : " ",
+        "category_1" : "Clean Ups":[
+            {
+                "category_id" : "1",
+                "type-1" : [{
+                    "type-id" : "1",
+                    "name" : "Hydra fresh Clean Up",
+                    "details" : "It is for normal to dry skin. Leaves the skin soft and supple.",
+                }],
+                "type-2" : [{
+                    "type-id" : "2",
+                    "name" : "Deep Pore Clean Up",
+                    "details" : " It is for oily to combination skin. Removes impurities with extraction of blackheads and whiteheads.",
+                }],
+                "type-3" : [{
+                    "type-id" : "3",
+                    "name" : "D-Tan",
+                    "details" : " It is for tanned & uneven skin. Removes tan and leaves skin lighter and softer.",
+                }],
+                 
                 
                 
             },
         ],
-    {
-        "id" : "2",
-        "service_2" : "Clean-ups",
-        "details" : "Normal clean-up,Designer clean-up,Peal mask"
-    },
+        "category_2" :  "Designer Clean Ups":[
+            {
+                "category_id" : "2",
+                "type-1" : [{
+                    "type-id" : "1",
+                    "name" : "Re-Energize Clean Up",
+                    "details" : "It is designed for dry, dehydrated & dull skin, feel the hydration & nourishment with this cleanup with the combination of nature & science.",
+                }],
+                "type-2" : [{
+                    "type-id" : "2",
+                    "name" : "Brightening Clean Up ",
+                    "details" : "It designed for dry, dehydrated & dull skin, feel the hydration & nourishment with this cleanup with the combination of nature & science.",
+                }],
+                "type-3" : [{
+                    "type-id" : "3",
+                    "name" : "Sensi Magic",
+                    "details" : "Non irritating cleanup for sensitive skin.The bio sensitive products helps soothing and calming down the skin. Subsides redness and brightens the skin.",
+                }],
+                 
+             },
+        ],
+    }
+
     {
         "id" : "3",
         "service_3" : "Bleach/Threading",
-        "details" : "Bleach,Threading"
-    },
+         "category_1" : "Bleach",
+         "details" : "Bleaching is also called skin whitening or skin lightening process, where the aim is to obtain an uniform skin colour, so that it can have an even exposure.",
+         "img" : " ",
+         "catergory_2 : "Threading",
+         "details" : "Threading is method of Hair Removal from Eyebrow, Upper Lip / Lower Lip, Forehead, Chin, Cheeks, Jawline, Full Face plucking the hair at the follicle level. Threading allows for a more defined and precise shape and can create better definition.",
+         "img" : " ",
+    }
+        
     {
         "id" : "4",
-        "service_1" : "Waxing",
-        "details" : "Normal-waxing, Choclate-waxing"
+        "service_4" : "Waxing",
+        "category_1" : "Normal Waxing",
+         "details" : "Waxing is the procedure of removing hair from certain parts of the body, under arms, half arms, full arms, half legs, full legs, bikini line, stomach, buttocks, half front / back full front / back bikini / brazilian, full body. normal wax is made of sugar & lemon mix.",
+         "img" : " ",
+         "category_2" :"Flavoured Chocolate Waxing"
+         "details" : "Chocolate as an ingredient has many beauty benefits to offer. It prevents fine lines, hydrates and boosts the skin for a healthy glow. This is so because chocolate possess antioxidants like cocoa flavonoids which are good for skin.",
+         "img" : " ",
+        
     },
     {
         "id" : "5",
-        "service_1" : "Manicure/Pedicure",
-        "details" : "Manicure,Pedicure",
+        "service_5" : "Manicure/Pedicure",
+        "img" : " ",
+       "category_1" : "Manicure",
+         "details" : "It is beauty treatment for the fingernails and hands performed. A manicure consists of filing and shaping the free edge, pushing and clipping (with a cuticle pusher and cuticle nippers) any non living tissue (but limited to the cuticle and hangnails), treatments with various liquids, massage of the hand, and the application of fingernail polish.",
+        "category_2" :"Pedicure",
+         "details" : "It is beauty treatments designed to improve - or maintain - the appearance and condition of the feet and toe nails. Pedicure comprise foot exfoliation to remove dead skin cells, nail filing, cuticle neatening, and the application of one or more nail polishes.",
+        
     }
 
 ]
@@ -118,24 +180,29 @@ nail services = [
     {
         "id" : "1",
         "service_1" : "Nail paint",
+        "img" : "",
     },
     {
         "id" : "2",
         "service_2" : "Gel paint",
+        "img" : "",
     },
     {
         "id" : "3",
         "service_3" : "Gel extension",
+        "img" : " ",
        
     },
     {
         "id" : "4",
-        "service_1" : "Acrylic Extension",
+        "service_4" : "Acrylic Extension",
+        "img" : "",
         
     },
     {
         "id" : "5",
-        "service_1" : "Nail Art",
+        "service_5" : "Nail Art",
+        "img" : "",
         
     }
 
@@ -145,37 +212,92 @@ hair services = [
     {
         "id" : "1",
         "service_1" : "haircut",
-        "details" : "Classic Bob Hair Cut,Asymmetric Hair Cut,Long Layers & many more"
+        "img" : " ",
+        "category-1" : "Classic Bob Hair Cut",
+        "category-2" : "Asymmetric Hair Cut",
+        "category-3" : "Long Layers & many more"
     },
     {
         "id" : "2",
         "service_2" : "hair styling",
-        "details" : "Temporary  Styling,Permanent Styling"
+        "img" : " ",
+        "category-1" : "Temporary  Styling",
+          "sub-category-1" : "Blow Dry - Curls / Straight",
+          "sub-category-2" : "Ironing",
+          "sub-category-3" : "Crimping",
+        "category-2" : "Permanent Styling",
+          "sub-category-1" : "Smoothening / Relaxing",
+          "sub-category-2" : "Straightening",
+          "sub-category-3" : " Rebonding",
     },
     {
         "id" : "3",
         "service_3" : "hair color",
-        "details" : "Global  Colour,Highlights,Colour Streaks"
+        "category-1" : "Global  Colour",
+        "img" : " ",
+        "category-2" :"Highlights",
+        "img" : " ",
+        "category-3" :Colour Streaks",
+        "img" : " ",
     },
     {
         "id" : "4",
-        "service_1" : "hair treatments",
-        "details" : "For Dry Damaged Hair"
+        "service_4" : "hair treatments",
+        "img" : " ",
+        "category_1" : "For Dry Damaged Hair Lipidium Reconstruction Series":[
+            {
+                "category_id" : "1",
+                "type-1" : [{
+                    "type-id" : "1",
+                    "name" : "Primer Reconstruction ",
+                    "details" : "Post shampoo treatment which reconstruct hair surface from roots to ends.",
+                }],
+                "type-2" : [{
+                    "type-id" : "2",
+                    "name" : "Power Reconstruction ",
+                    "details" : "Enriched with Lactic acid that works on cortex reconstruction, leaving your hair smooth & shiny.",
+                }],
+                "type-3" : [{
+                    "type-id" : "3",
+                    "name" : "Vapo Reconstruction ",
+                    "details" : " Enriched with reconstructing lipids targets each zone of the hair fibre leaving your hair soft and silky.",
+                }],
+                 
+                
+                
+            },
+        ],
+        "category_2" :  "Association of several oils ":[
+            {
+                "category_id" : "2",
+                  "sub-category-1" :"Anti Hair Thinning Treatment",
+                  "sub-category-2" :" Anti Dandruff",
+                  "sub-category-3" :" Balancing Treatment – for Oily Scalp",
+                  "sub-category-4" :"Nourishing Treatment - for Dry Scalp",
+                  "sub-category-5" : "Anti Hair loss Treatment",
+
+             },
+        ],
     },
     {
         "id" : "5",
-        "service_1" : "hair spa",
-        "details" : "Manicure,Pedicure",
+        "service_5" : "hair spa",
+        "img" : "",
+        "category" : "Hair Spa",
+        "details" : "";
+        "category" : "Detox Hair Spa",
+        "details" : "Personalized clay-based service to remove excess oil & dandruff leaving your scalp & hair completely detoxified.";
+        "category" : "Keratin Spa",
+        "details" : "Specially Formulated to contain Juvexin Keratin, which rebuilds, restores & rejuvenate the hair giving a softer, silker feel.";
+       
     }
      {
         "id" : "5",
-        "service_1" : "hair wash",
-        "details" : "Manicure,Pedicure",
+        "service_5" : "hair wash",
+        "category-1": "normal hair wash",
+        "img" : " ",
+        "category-2" :"keratin hair wash",
+        "img" : " ",
     }
 
 ]
-[{"_id":"618776b162a1816f885956b9",
-"restaurant_id":1,"restaurant_name":"Domino's Pizza","location_id":1,"state_id":1,"address":"Ashok Vihar Phase 3, New Delhi",
-"restaurant_thumb":"https://b.zmtcdn.com/data/pictures/chains/3/143/c77dfea619f2d7786a7d054afab5cd88_featured_v2.jpg",
-"average_rating":4.2,"rating_text":"Very Good","cost":666,"contact_number":9453524651,
-"mealTypes":[{"mealtype_id":1,"mealtype_name":"Breakfast"},{"mealtype_id":2,"mealtype_name":"Lunch"}],"cuisines":[{"cuisine_id":1,"cuisine_name":"North Indian"},{"cuisine_id":4,"cuisine_name":"Fast Food"}],"
