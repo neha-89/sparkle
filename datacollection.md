@@ -1,24 +1,25 @@
 List of Services:
-
+http://localhost:3000/api/post 
+http://localhost:3000/api/getAll
 const services = [
     {
-        "id":"1",
+        "service_id":"1",
         "servicename" :  "bridal services",
     },
     {
-        "id":"2",
+        "service_id":"2",
         "servicename" :  "beauty services",
     },
     {
-        "id":"3",
+        "service_id":"3",
         "servicename" :  "nail services",
     },
     {
-        "id":"4",
+        "service_id":"4",
         "servicename" :  "hair services",
     },
     {
-        "id":"5",
+        "service_id":"5",
         "servicename" : "tattoo services",
     }
     
@@ -28,13 +29,13 @@ Each services with sub services
 
 bridal services = [
     {
-        "id" : "1",
+        "service_id" : "1",
         "service_1" : "bridal make-up",
         "details" : "Makeup + hair-style+ Saree-draping",
         "img" : " ",
     },
     {
-        "id" : "2",
+        "service_id" : "1",
         "service_2" : "pre-bridal packages",
         "details" : "Threading, Waxing, Face & Body Bleach, Facial, Body Polishing, Hand & Foot Spa, Haircut, Hair Spa",
         "img" : " ",
@@ -44,7 +45,7 @@ bridal services = [
 
 beauty services = [
     {
-        "id" : "1",
+        "service_id" : "2",
         "service_1" : "Facial",
         "img" : " ",
         "category_1" : "Normal Facial":[
