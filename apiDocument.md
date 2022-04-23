@@ -2,6 +2,7 @@ Sparkle Salon Rest API's
 
 Insert any new service
 POST : http://localhost:3000/api/post/
+https://sparklenodeapi.herokuapp.com/api/post
 
 
 List of all the services
