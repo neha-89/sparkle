@@ -8,7 +8,8 @@ const Header =(props)=>{
             <>
              <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
-                  <a className="navbar-brand" href="#">Sparkle Beauty Zone</a>
+                  <Link to="/home" className="navbar-brand">Sparkle Beauty Zone</Link>
+                  
                   <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                   </button>
@@ -34,8 +35,8 @@ const Header =(props)=>{
                   </div>
                   <ul className="d-flex">
                       {/* <!-- <li>Book an appointment</li> --> */}
-                    <li><a href="#"><i class="bi bi-box-arrow-in-right"></i> Login</a></li>
-                    <li><a href="#"><i class="bi bi-person-plus"></i> SignUp</a></li>
+                    <li><Link to='/home' className ="bi bi-box-arrow-in-right">Login</Link></li>
+                    <li><Link to='/home' className ="bi bi-person-plus">SignUp</Link></li>
                     {/* <li><a onclick="darkmode()" id="Knop"> 
                        <span class="sun-icon">
                           <i class="bi bi-sun-fill" id="zon" style="color:#ffde08;"></i>
