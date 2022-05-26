@@ -1,15 +1,26 @@
 import React from 'react';
 import { Component } from 'react';
-import DisplayServices from './DisplayServices';
+//import DisplayServices from './DisplayServices';
 
 
-const url = "https://sparklenodeapi.herokuapp.com/api/getAll";
+//const url = "https://sparklenodeapi.herokuapp.com/api/getAll";
 class Home extends Component{
   constructor(){
     super()
     this.state ={
-      serviceName :''
+      items: [],
+      DataisLoaded: false
     }
+  }
+  componentDidMount() {
+    fetch("https://sparklenodeapi.herokuapp.com/api/getAll")
+      .then((res) => res.json())
+      .then((json) => {
+        this.setState({
+          items: json,
+          DataisLoaded: true
+        });
+      });
   }
 // const [services,setServices] = useState([]);
 
@@ -20,6 +31,13 @@ class Home extends Component{
    
 // },[])
 render(){
+  const { DataisLoaded, items } = this.state;
+  if (!DataisLoaded)
+    return (
+      <div>
+        <h1> Pleses wait some time.... </h1>{" "}
+      </div>
+    );
   return(
     <>
     
@@ -49,7 +67,58 @@ render(){
               <span className="visually-hidden">Next</span>
             </button>
           </div>
-        <DisplayServices serviceData={this.state.serviceName} />
+          <div className="container">
+        <h2>Recommended Services</h2>
+        <p className="card-text">Our runway experts have curated some of the most popular services at Lakmé Salon,
+        just for you. Take your pick and head to your nearest salon and get started on your makeover!</p>
+      <div className="row">
+      {items.map((item) => (
+        <div className="col-md-3" key={item.id}>
+        <div className="card" >
+          <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img"className="card-img-top r-serv"/>
+          <div className="card-body r-servtext  shadow p-3 mb-5 " >
+            <span>{item.servicename}</span>
+          </div>
+        </div>
+      </div>
+          //<ol key={item.id}>servicename: {item.servicename},</ol>
+          
+        ))}
+            {/* <div className="col-md-3">
+              <div className="card" >
+                <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img"className="card-img-top r-serv"/>
+                <div className="card-body r-servtext  shadow p-3 mb-5 ">
+                  <span>Pedicure & Menicure</span>
+                </div>
+              </div>
+            </div> 
+            <div className="col-md-3">
+              <div className="card " >
+                <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img"className="card-img-top r-serv"/>
+                <div className="card-body r-servtext shadow p-3 mb-5">
+                  <span>Hair Spa</span>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="card " >
+                <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img" className="card-img-top r-serv"/>
+                <div className="card-body r-servtext  shadow p-3 mb-5">
+                  <span>Fruit Facial</span>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="card" >
+                <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img" className="card-img-top r-serv" />
+                <div className="card-body r-servtext  shadow p-3 mb-5">
+                  <span>Daily Glam Makeup</span>
+                </div>
+              </div>
+            </div> */}
+        </div>
+    </div>
+        {/* <DisplayServices serviceData={this.state.serviceName} /> */}
    <div className="container-fluid testimonial">
     <h2>Testimonials</h2>
     <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
@@ -101,15 +170,16 @@ render(){
   )
 }
   //api calling
-  componentDidMount(){
-    fetch(url,{method:'GET'})
-    .then((response)=>response.json())
-    .then((data) =>console.log(data))
-    .then((data)=>{
-      this.setState({serviceName:data})
-    })
+  // componentDidMount(){
+  //   fetch(url,{method:'GET'})
+  //   .then((response)=>response.json())
+  //   .then((data) =>console.log(data))
+  //   .then((data)=>{
+  //     this.setState({serviceName:data})
+     
+  //   })
    
-  }      
+  // }      
 }
 
 
