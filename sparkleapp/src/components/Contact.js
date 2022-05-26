@@ -11,25 +11,25 @@ export default function Contact(){
             <form id="contact">
                
                 <div className="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Anil Kumar" />
+                    <input type="text" className="form-control" id="floatingInput" placeholder="Anil Kumar" />
                     <label for="floatingInput">Full Name</label>
                   </div>
               
              
                 <div className="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"/>
+                    <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
                     <label for="floatingInput">Email address</label>
                   </div>
               
               
                 <div className="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                     <label for="floatingTextarea">Message</label>
                   </div>
               
   
               
-                <button type="submit" id="send" class="btn btn-primary btn-block mb-4">Send</button>
+                <button type="submit" id="send" className="btn btn-primary btn-block mb-4">Send</button>
               </form>
              
       </div>
