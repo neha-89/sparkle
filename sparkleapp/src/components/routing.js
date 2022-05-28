@@ -13,7 +13,8 @@ const Routing = () => {
                 <Routes>
                     <Route path="/" element={<Header/>}>
                         <Route path="home" element={<Home/>}/>
-                        <Route path="services" element={<Services/>}/>
+                        <Route path="services/" element={<Services/>}/>
+                        <Route path="/services/:id" component={<ServicesDetails/>}/>
                         <Route path="contact" element={<Contact/>}/>
                         <Route path="*" 
                         element={

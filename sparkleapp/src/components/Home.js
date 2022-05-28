@@ -1,6 +1,8 @@
 import React from 'react';
 import { Component } from 'react';
 import DisplayServices from './DisplayServices';
+
+
 class Home extends Component{
   constructor(){
     super()
@@ -56,26 +58,7 @@ class Home extends Component{
               <span className="visually-hidden">Next</span>
             </button>
           </div>
-    {/* <div className="container">
-        <h2>Recommended Services</h2>
-        <p className="card-text">Our runway experts have curated some of the most popular services at Lakmé Salon,
-        just for you. Take your pick and head to your nearest salon and get started on your makeover!</p>
-      <div className="row">
-      {items.map((item) => (
-        <Link to={`/listing/${item.service_id}`} key={item._id}>
-        <div className="col-md-3">
-         <div className="card" >
-          <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img"className="card-img-top r-serv"/>
-          <div className="card-body r-servtext  shadow p-3 mb-5 " >
-            <span key={item.service_id}>{item.servicename}</span>
-          </div>
-        </div>
-      </div>
-     </Link>   
-        ))}
-            
-        </div>
-    </div> */}
+
         <DisplayServices serviceData={this.state.items} />
    <div className="container-fluid testimonial">
     <h2>Testimonials</h2>
@@ -216,6 +199,7 @@ class Home extends Component{
 //         </div>
 //     </div>
 //         {/* <DisplayServices serviceData={this.state.serviceName} /> */}
+               //<DisplayServices servicesData={services}/>
 //    <div className="container-fluid testimonial">
 //     <h2>Testimonials</h2>
 //     <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
