@@ -1,23 +1,21 @@
 import React,{useState ,useEffect} from 'react';
-import axios from 'axios';
-import { useParams } from 'react-router';
+
+
 
 
 export default function Services(){
     const params = useParams();
-    const [data ,setData] = useState([]);
-
+    const [service,setService] = useState([]);
 
     useEffect(()=>{
-        axios.get(`https://sparklenodeapi.herokuapp.com/api/subservice/service_id/${params.service_id}}`)
-        .then((res)=>{res.json})
-        .then((data) =>console.log(data))
-        .then((data)=> setData(data))
-    },[params.service_id])
-
+        fetch(('https://sparklenodeapi.herokuapp.com/api/getAll'))
+        .then((res)=>res.json())
+        .then((data)=>setService(data))
+    },[])
+  
     return(
         <>
-
+          <h1></h1>
         </>
     )
 }
