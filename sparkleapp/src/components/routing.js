@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import Services from './Services';
+//import ServiceDetails from './ServiceDetails';
 import Contact from './Contact';
 
 
@@ -14,7 +15,7 @@ const Routing = () => {
                     <Route path="/" element={<Header/>}>
                         <Route path="home" element={<Home/>}/>
                         <Route path="services/" element={<Services/>}/>
-                        <Route path="/services/:id" component={<ServicesDetails/>}/>
+                        {/* <Route path="/services/:id" component={<ServiceDetails/>}/> */}
                         <Route path="contact" element={<Contact/>}/>
                         <Route path="*" 
                         element={
