@@ -1,8 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+const url = "https://sparkleloginapi.herokuapp.com/api/auth/login";
 export default function Register(){
+    const [user,setUser] = useState('')
+    const [userDetails ,setUserDetails] = useState({
+        email :'',
+        password :''
+    }) 
+    const handleChange =(event)=>{
+            setUser(event.target.value);
+    }
+    const login = () =>{
+        fetch(url,{method:POST
+            ,
+            headers:{
+                'accept':'application/json',
+                'content-type':'application/json'
+            },
+            body:JSON.stringify(userDetails)})
+    }
     return(
         <>
+        <form >
+        <div className="mb-3 mt-3">
+            <label for="email" className="form-label">Email:</label>
+            <input type="email" className="form-control" id="email" value={userDetails.email} placeholder="Enter email" name="email" onChange= {handleChange}/>
+        </div>
+        <div class="mb-3">
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="pwd" value = {userDetails.password} placeholder="Enter password" name="pswd" onChange={handleChange}/>
+        </div>
+        
+        <button type="submit" onClick = {login} class="btn btn-primary">Submit</button>
+        </form>
         </>
     )
     
