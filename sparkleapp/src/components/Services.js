@@ -21,7 +21,7 @@ export default function Services(){
          <h2>Services</h2>
          <p className="card-text">Our runway experts have curated some of the most popular services at Lakmé Salon,
          just for you. Take your pick and head to your nearest salon and get started on your makeover!</p>
-       <div className="row row-cols-1 row-cols-4 g-4">
+       <div className="row row-cols-1 row-cols-3 g-3">
        {service.map((item) => (
        
         <div className="col">
