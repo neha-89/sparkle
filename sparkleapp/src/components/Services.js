@@ -21,14 +21,14 @@ export default function Services(){
          <h2>Services</h2>
          <p className="card-text">Our runway experts have curated some of the most popular services at Lakmé Salon,
          just for you. Take your pick and head to your nearest salon and get started on your makeover!</p>
-       <div className="row row-cols-1 row-cols-3 g-3">
+       <div className="row row-cols-1 row-cols-3 ">
        {service.map((item) => (
        
         <div className="col">
-            <Link to={`/listing/${item.service_id}`} key={item._id}>
-         <div className="card"style={{height:'350px'}} >
+            <Link to={`/services/${item.service_id}`} key={item._id}>
+         <div className="card" >
          {/* <img src={item.image} className="card-img-top" style={{height:'150px',width:'70%',marginLeft:'10%'}} /> */}
-          <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img"className="card-img-top"  style={{height:'150px',width:'70%',marginLeft:'10%'}}/>
+          <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img"className="card-img-top"  />
           <div className="card-body shadow " >
            <span >{item.servicename}</span>
           </div>

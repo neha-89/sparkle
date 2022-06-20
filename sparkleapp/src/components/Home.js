@@ -182,24 +182,23 @@ class Home extends Component{
 //         <h2>Recommended Services</h2>
 //         <p className="card-text">Our runway experts have curated some of the most popular services at Lakmé Salon,
 //         just for you. Take your pick and head to your nearest salon and get started on your makeover!</p>
-//       <div className="row">
-//       {items.map((item) => (
+//       <div className="row  row-cols-1 row-cols-3">
+//        <div className="col-md-3">
+//        {items.map((item) => (
 //         <Link to={`/listing/${item.service_id}`} key={item._id}>
-//         <div className="col-md-3">
 //          <div className="card" >
-//           <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img"className="card-img-top r-serv"/>
-//           <div className="card-body r-servtext  shadow p-3 mb-5 " >
+//            <img src="https://i.ibb.co/WzwJF2c/img.jpg" alt="img"className="card-img-top r-serv"/>
+//            <div className="card-body r-servtext  shadow p-3 mb-5 " >
 //             <span key={item.service_id}>{item.servicename}</span>
 //           </div>
 //         </div>
-//       </div>
 //      </Link>   
 //         ))}
-            
+//           </div> 
 //         </div>
 //     </div>
 //         {/* <DisplayServices serviceData={this.state.serviceName} /> */}
-               //<DisplayServices servicesData={services}/>
+//                {/* <DisplayServices servicesData={services}/> */}
 //    <div className="container-fluid testimonial">
 //     <h2>Testimonials</h2>
 //     <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
@@ -250,18 +249,18 @@ class Home extends Component{
 //     </>
 //   )
 // }
-//   //api calling
-//   // componentDidMount(){
-//   //   fetch(url,{method:'GET'})
-//   //   .then((response)=>response.json())
-//   //   .then((data) =>console.log(data))
-//   //   .then((data)=>{
-//   //     this.setState({serviceName:data})
+  //api calling
+  // componentDidMount(){
+  //   fetch(url,{method:'GET'})
+  //   .then((response)=>response.json())
+  //   .then((data) =>console.log(data))
+  //   .then((data)=>{
+  //     this.setState({serviceName:data})
      
-//   //   })
+  //   })
    
-//   // }      
-// }
+  // }      
+
 
 
  export default Home
